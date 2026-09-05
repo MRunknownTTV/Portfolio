@@ -1,0 +1,6 @@
+.page4{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: sticky;
+}

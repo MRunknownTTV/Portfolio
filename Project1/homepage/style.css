@@ -1,0 +1,196 @@
+html{
+    font-size: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* overflow: hidden; */
+}
+body{
+    background: linear-gradient(90deg, rgb(11, 0, 53), rgb(33, 0, 85));
+    
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+.page{
+    height: 100vh;
+    width: 400vw;
+    display: flex;
+}
+
+.page1, .page2, .page3, .page4{
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+.page1{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+}
+
+.ho{
+    display: flex;
+    justify-self: center;
+    align-self: top;
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    position: sticky;
+}
+
+.tekst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+    position: sticky;
+}
+
+#listed-tekst{
+        display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+    position: sticky;
+}
+        #info{
+            justify-self: center;
+            position: sticky;
+            margin: 50px;
+            height: 800px;
+            width: clamp(700px, 40vw, 1000px);
+            border: solid black 1px;
+            border-radius: 15%;
+            box-shadow: 10px 10px 100px 15px;
+            background: linear-gradient(90deg, rgb(13, 0, 65), rgb(37, 0, 95));
+            transition: 0.4s;
+            
+        }
+
+
+
+    .burgerMenu{
+        position: absolute;
+        justify-items: center;
+        align-content: center;
+        top: 0%;
+        left: 0%;
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        cursor: pointer;
+        
+
+    }
+
+.line-1, .line-2, .line-3{
+    display: flex;
+    width: 70px;
+    height: 10px;
+    margin: 12px 0;
+    background-color: rgb(212, 0, 0);
+    transition: 0.4s;
+}
+
+    .links{
+        opacity: 0;
+        margin: 10px;
+        font-size: 20px;
+        transition: 0.4s;
+    }
+
+        .small-info{
+            justify-self: center;
+            position: sticky;
+            margin: 180px;
+            height: 800px;
+            width: 90vw;
+            
+            
+        }
+
+        #Vaardigheden{
+            justify-self: left;
+            position: absolute;
+            height: 650px;
+            width: 25vw;
+            border: solid black 1px;
+            border-radius: 15%;
+            box-shadow: 10px 10px 100px 15px;
+            background: linear-gradient(90deg, rgb(13, 0, 65), rgb(37, 0, 95));
+            transition: 0.4s;
+        }
+
+                #Contact{
+            justify-self: center;
+            position: absolute;
+            height: 650px;
+            width: 25vw;
+            border: solid black 1px;
+            border-radius: 15%;
+            box-shadow: 10px 10px 100px 15px;
+            background: linear-gradient(90deg, rgb(13, 0, 65), rgb(37, 0, 95));
+            transition: 0.4s;
+        }
+
+                #Projects{
+            justify-self: right;
+            position: absolute;
+            height: 650px;
+            width: 25vw;
+            border: solid black 1px;
+            border-radius: 15%;
+            box-shadow: 10px 10px 100px 15px;
+            background: linear-gradient(90deg, rgb(13, 0, 65), rgb(37, 0, 95));
+            transition: 0.4s;
+        }
+
+.change .line-1{
+    transform: translate(0, 22px) rotate(45deg);
+}
+
+.change .line-2{
+    opacity: 0;
+}
+
+.change .line-3{
+    transform: translate(0, -22px) rotate(-45deg);
+}
+
+.change .links{
+    opacity: 1;
+}
+
+
+
+#info:hover{
+    transform: scale(1.2);
+}
+
+#Vaardigheden:hover{
+    transform: scale(1.2);
+}
+
+#Contact:hover{
+    transform: scale(1.2);
+}
+
+#Projects:hover{
+    transform: scale(1.2);
+}
