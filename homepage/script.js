@@ -4,6 +4,11 @@ function myFunction(x) {
 }
 
 function Page1(slide){
-        document.getElementById("Page1").style.transform = "translateX(-100vw)";
+        document.querySelector("#Page1")
+        .scrollIntoView({
+            behavior: 'smooth'
+        })
+
+
 }
 
